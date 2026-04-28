@@ -3,10 +3,12 @@ package com.pluralsight;
 import java.util.Scanner;
 
 //
-public class CPI_Application
+public class Main
 {
    static Scanner scanner = new Scanner(System.in);
 
+    public static void main(String[] args) {
+        homeScreen();
    static void homeScreen()
    {
        while(true) {
