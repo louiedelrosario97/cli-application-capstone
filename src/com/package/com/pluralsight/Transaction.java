@@ -25,11 +25,24 @@ public class Transaction {
     public void setDate(String date) { this.date = date; }
 
     // Constructor
-    public Transaction(String date, String time, String description, String vendor, double amount) {
+    public Transaction(String date, String time, String description, String vendor, double amount)
+    {
         this.date = date;
         this.time = time;
         this.description = description;
         this.vendor = vendor;
         this.amount = amount;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Transaction{" +
+                "date='" + date + '\'' +
+                ", time='" + time + '\'' +
+                ", description='" + description + '\'' +
+                ", vendor='" + vendor + '\'' +
+                ", amount=" + amount +
+                '}';
     }
 }

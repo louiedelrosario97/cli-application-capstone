@@ -1,53 +1,84 @@
 package com.pluralsight;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Scanner;
 
-//
+
 public class Main
 {
    static Scanner scanner = new Scanner(System.in);
+   static LedgerManagement ledger = new LedgerManagement();
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         homeScreen();
+    }
+
    static void homeScreen()
-   {
-       while(true) {
+   {   String choice;
+       boolean runningLoop = true; // Variable used to control the loop via "Exit"
+       while(runningLoop) {
            System.out.println();
-           System.out.println("ACCOUNTING LEDGER");
-           System.out.println("---------------------");
+           System.out.println(" ACCOUNTING LEDGER");
+           System.out.println("-------------------");
            System.out.println();
            System.out.println("D) Add Deposit");
            System.out.println("P) Add Payment");
-           System.out.println("L) Ledger Display");
+           System.out.println("L) Open Ledger");
            System.out.println("E) Exit");
            System.out.print("Choose option: ");
-           String choice = scanner.nextLine().toUpperCase().strip();
+           choice = scanner.nextLine().toUpperCase().strip();
            System.out.println();
 
-           switch (choice) {
-               case "D":
-                   deposit();
-                   break;
-               case "P":
-                   payment();
-                   break;
-               case "L":
-                   ledgerScreen();
-                   break;
-               case "E":
-                   System.out.println("Goodbye!");
-                   break;
-               default:
-                   System.out.println("Invalid response, try again: ");
-                   break;
+           switch (choice)
+           {
+               case "D": deposit();   break;
+               case "P": payment();  break;
+               case "L": ledgerScreen(); break;
+               case "X": runningLoop = false; break;
+               default:  System.out.println("Invalid option, silly billy.");
            }
        }
-
-       public static void deposit() { // Need to
-
+       System.out.println("Saiyonara!");
    }
 
+    // deposit() use LocalDate.now
+    public static void deposit()
+    {
+    System.out.println("Deposit Information:");
+    System.out.print("Description: ");
+    String description = scanner.nextLine();
 
+    System.out.print("Vendor: ");
+    String vendor = scanner.nextLine();
+
+    System.out.print("Deposit Amount: ");
+    double amount = Double.parseDouble(scanner.nextLine());
+
+    String date = LocalDate.now().toString();
+    String time = LocalTime.now().toString();
+
+    Transaction newTransaction = new Transaction(date, time, description, vendor, amount);
+    ledger.addTransaction(newTransaction);
+
+    System.out.println("Deposit added successfully!");
+
+    }
+
+    // payment()
+    public static void payment()
+    {
+
+
+    }
+
+    // ledgerScreen()
+    public static void ledgerScreen()
+    {
+
+
+    }
 
 
 
