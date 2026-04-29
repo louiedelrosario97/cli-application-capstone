@@ -149,9 +149,7 @@ public class LedgerManagement
 // --------------------------------------------- previousYear() -------------------------------------------------------
     public void previousYear()
     {
-        System.out.println(" Date | Time | Description | Vendor | Amount ");
-        System.out.println("-------------------------------------------");
-
+        printHeader();
         int previousYear = LocalDate.now().getYear() - 1;
 
         for (int i = transactions.size() - 1; i >= 0; i--)
@@ -168,9 +166,7 @@ public class LedgerManagement
 // --------------------------------------------- searchByVendor() -------------------------------------------------------
     public void searchByVendor(String vendorName)
     {
-        System.out.println("Date | Time | Description | Vendor | Amount");
-        System.out.println("-------------------------------------------");
-
+        printHeader();
         for (int i = transactions.size() - 1; i >= 0; i--)
         {
             Transaction t = transactions.get(i);
