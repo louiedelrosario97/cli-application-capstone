@@ -121,13 +121,14 @@ public class Main
 
             switch (choice)
             {
-                case "A": displayTransactions(); break;
-                case "D": displayTransactions(); break;
-                case "P": displayTransactions(); break;
-                case "R": reportsScreen(); break;
-                case "H": homeScreen(); break;
-                case "X": runningLoop = false; break;
-                default: System.out.println("Invalid option, silly billy.");
+                case "A": ledger.displayAll();      break;
+                case "D": ledger.displayDeposits(); break;
+                case "P": ledger.displayPayments(); break;
+                case "R": ledger.reportsScreen();   break;
+                case "H": homeScreen();             break;
+                case "X": runningLoop = false;      break;
+
+                default: System.out.println("Invalid option. Please try again.");
             }
 
         }
