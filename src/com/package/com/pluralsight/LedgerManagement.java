@@ -93,7 +93,7 @@ public class LedgerManagement
             }
         }
     }
-    // --------------------------------------------- monthToDate() ----------------------------------------------------
+// --------------------------------------------- monthToDate() ----------------------------------------------------
     public void monthToDate()
     {
         printHeader();
@@ -111,7 +111,7 @@ public class LedgerManagement
             }
         }
     }
-    // --------------------------------------------- previousMonth() ----------------------------------------------------
+// --------------------------------------------- previousMonth() ----------------------------------------------------
     public void previousMonth()
     {
         printHeader();
@@ -129,7 +129,7 @@ public class LedgerManagement
             }
         }
     }
-    // --------------------------------------------- yearToDate() ----------------------------------------------------
+// --------------------------------------------- yearToDate() ----------------------------------------------------
     public void yearToDate()
     {
         printHeader();
@@ -146,7 +146,7 @@ public class LedgerManagement
             }
         }
     }
-    // --------------------------------------------- previousYear() ----------------------------------------------------
+// --------------------------------------------- previousYear() -------------------------------------------------------
     public void previousYear()
     {
         System.out.println(" Date | Time | Description | Vendor | Amount ");
@@ -165,6 +165,7 @@ public class LedgerManagement
             }
         }
     }
+// --------------------------------------------- searchByVendor() -------------------------------------------------------
     public void searchByVendor(String vendorName)
     {
         System.out.println("Date | Time | Description | Vendor | Amount");
