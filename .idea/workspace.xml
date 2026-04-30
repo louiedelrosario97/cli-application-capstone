@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="201931ae-8d83-45bb-a712-f18a8fac4cb3" name="Changes" comment="Fixed the package structure so the app runs properly">
+    <list default="true" id="1d50e6fb-fced-4c69-a90c-2cb6935a2383" name="Changes" comment="minor code cleaning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pluralsight/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pluralsight/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pluralsight/TODOList" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pluralsight/TODOList" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,18 +33,17 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/louiedelrosario97/cli-application-capstone.git&quot;,
-    &quot;accountId&quot;: &quot;f7b246f3-53a4-4e93-bfdc-ba1fac676d79&quot;
+    &quot;accountId&quot;: &quot;4244fbea-c41a-404a-a0b4-d9a5f7d18284&quot;
   }
 }</component>
-  <component name="McpProjectServerCommands">
-    <commands />
-    <urls />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
 }</component>
-  <component name="ProjectId" id="3D5YRlmsKk9sznSEwh5ooAvWIYy" />
+  <component name="ProjectId" id="3CxpSir0Tr9zQBmWTQVbPcgmchV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,48 +53,227 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/louie/OneDrive/Desktop/YearUp/Classes/Java/cli-application-capstone/pom.xml&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.com.intellij.openapi.options.colors.pages.DefaultLanguageColorsPage&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
-      </set>
-    </attachedChunks>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.Main" />
+      <module name="cli-application-capstone" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluralsight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="201931ae-8d83-45bb-a712-f18a8fac4cb3" name="Changes" comment="" />
-      <created>1777573392627</created>
+      <changelist id="1d50e6fb-fced-4c69-a90c-2cb6935a2383" name="Changes" comment="" />
+      <created>1777337076538</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1777573392627</updated>
+      <updated>1777337076538</updated>
+      <workItem from="1777337080686" duration="12718000" />
+      <workItem from="1777363409334" duration="73214000" />
+      <workItem from="1777589356726" duration="2754000" />
     </task>
-    <task id="LOCAL-00001" summary="Fixed the package structure so the app runs properly">
+    <task id="LOCAL-00001" summary="loadTransactions() method built 90%">
       <option name="closed" value="true" />
-      <created>1777573711055</created>
+      <created>1777339451123</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1777573711055</updated>
+      <updated>1777339451124</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="made a // TODO: list, currently creating the deposit() method to enter information, and connecting it with the addTransaction() method to store that info in our array list data base.">
+      <option name="closed" value="true" />
+      <created>1777408751388</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1777408751388</updated>
+    </task>
+    <task id="LOCAL-00003" summary="working on deposit() and payment() code blocks in main">
+      <option name="closed" value="true" />
+      <created>1777436925823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777436925823</updated>
+    </task>
+    <task id="LOCAL-00004" summary="starting to build the methods for all the cases in ledgerScreen(). &#10;&#10;(displayAll(), displayDeposits(), displayPayments())&#10;&#10;Using for-loops + array lists to extract the info we want.">
+      <option name="closed" value="true" />
+      <created>1777444376650</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777444376650</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1am commit. Time for bed.">
+      <option name="closed" value="true" />
+      <created>1777448683412</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777448683412</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Debugging. In the process of changing method names, code structure, etc">
+      <option name="closed" value="true" />
+      <created>1777499056894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777499056894</updated>
+    </task>
+    <task id="LOCAL-00007" summary="created methods for all the different switch cases for reportsScreen()">
+      <option name="closed" value="true" />
+      <created>1777502364907</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1777502364907</updated>
+    </task>
+    <task id="LOCAL-00008" summary="created methods for all the different switch cases for reportsScreen()">
+      <option name="closed" value="true" />
+      <created>1777502452121</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1777502452121</updated>
+    </task>
+    <task id="LOCAL-00009" summary="created methods for all the different switch cases for reportsScreen()">
+      <option name="closed" value="true" />
+      <created>1777502752980</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1777502752980</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Completed the structure of the application. Now just need to polish up the details and potential code breakers.&#10;&#10;Fixed toString() format to print desired outcome">
+      <option name="closed" value="true" />
+      <created>1777509444124</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1777509444124</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Code reviewing/logic bug work. (See &quot;Detail Tweaks&quot; section in TODOList file.)">
+      <option name="closed" value="true" />
+      <created>1777513072951</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1777513072951</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Code reviewing/logic bug work. (See &quot;Detail Tweaks&quot; section in TODOList file.)">
+      <option name="closed" value="true" />
+      <created>1777513333340</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1777513333340</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added formatting changes and $amount to toString()">
+      <option name="closed" value="true" />
+      <created>1777526503133</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1777526503133</updated>
+    </task>
+    <task id="LOCAL-00014" summary="formatting changes to toString() and printHeader()">
+      <option name="closed" value="true" />
+      <created>1777527818879</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1777527818879</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updated todo list">
+      <option name="closed" value="true" />
+      <created>1777528328811</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1777528328811</updated>
+    </task>
+    <task id="LOCAL-00016" summary="minor code cleaning">
+      <option name="closed" value="true" />
+      <created>1777535258725</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1777535258725</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix package structure to src/com/pluralsight" />
-    <MESSAGE value="Fixed the package structure so the app runs properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the package structure so the app runs properly" />
+    <MESSAGE value="loadTransactions() method built 90%" />
+    <MESSAGE value="made a // TODO: list, currently creating the deposit() method to enter information, and connecting it with the addTransaction() method to store that info in our array list data base." />
+    <MESSAGE value="working on deposit() and payment() code blocks in main" />
+    <MESSAGE value="starting to build the methods for all the cases in ledgerScreen(). &#10;&#10;(displayAll(), displayDeposits(), displayPayments())&#10;&#10;Using for-loops + array lists to extract the info we want." />
+    <MESSAGE value="1am commit. Time for bed." />
+    <MESSAGE value="Debugging. In the process of changing method names, code structure, etc" />
+    <MESSAGE value="created methods for all the different switch cases for reportsScreen()" />
+    <MESSAGE value="Completed the structure of the application. Now just need to polish up the details and potential code breakers" />
+    <MESSAGE value="Completed the structure of the application. Now just need to polish up the details and potential code breakers.&#10;&#10;Fixed toString() format to print desired outcome" />
+    <MESSAGE value="Code reviewing/logic bug work. (See &quot;Detail Tweaks&quot; section in TODOList file.)" />
+    <MESSAGE value="added formatting changes and $amount to toString()" />
+    <MESSAGE value="formatting changes to toString() and printHeader()" />
+    <MESSAGE value="updated todo list" />
+    <MESSAGE value="minor code cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor code cleaning" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

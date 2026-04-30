@@ -128,27 +128,32 @@ public class Main
         System.out.println();
         System.out.println("DEPOSIT INFO:");
         System.out.println("-------------------");
+
+        System.out.print("Date (MM/DD/YYYY): ");
+        String date = scanner.nextLine();
+        DateTimeFormatter dtFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        LocalDate transactionDate = LocalDate.parse(date, dtFormatter);
+
+        String time = LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss a")); // "hh:mm:ss a" creates 12-hour AM/PM format
+
         System.out.print("Description: ");
         String description = scanner.nextLine();
 
         System.out.print("Vendor: ");
         String vendor = scanner.nextLine();
 
-        System.out.print("Deposit Amount: ");
+        System.out.print("Deposit Amount: $");
         double amount = Double.parseDouble(scanner.nextLine());
 
         while (amount < 0)
         {
             System.out.println();
             System.out.println("Deposit must be a positive value, please try again.");
-            System.out.print("Amount: " );
+            System.out.print("Amount: $" );
             amount = Double.parseDouble(scanner.nextLine());
         }
 
-        String date = LocalDate.now().format(DateTimeFormatter.ofPattern("MMMM d, yyyy"));
-        String time = LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss a")); // "hh:mm:ss a" creates 12-hour AM/PM format
-
-        Transaction newTransaction = new Transaction(date, time, description, vendor, amount);
+        Transaction newTransaction = new Transaction(transactionDate.format(dtFormatter), time, description, vendor, amount);
         ledger.addTransaction(newTransaction);
 
         System.out.println();
@@ -160,27 +165,32 @@ public class Main
         System.out.println();
         System.out.println("PAYMENT INFO:");
         System.out.println("-------------------");
+
+        System.out.print("Date (MM/DD/YYYY): ");
+        String date = scanner.nextLine();
+        DateTimeFormatter dtFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        LocalDate transactionDate = LocalDate.parse(date, dtFormatter);
+
+        String time = LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss a"));
+
         System.out.print("Description: ");
         String description = scanner.nextLine();
 
         System.out.print("Vendor: ");
         String vendor = scanner.nextLine();
 
-        System.out.print("Amount: ");
+        System.out.print("Amount: $");
         double amount = Double.parseDouble(scanner.nextLine());
 
         while (amount > 0)
         {
             System.out.println();
             System.out.println("Payment must be a negative value, please try again.");
-            System.out.print("Amount: ");
+            System.out.print("Amount: $");
             amount = Double.parseDouble(scanner.nextLine());
         }
 
-        String date = LocalDate.now().format(DateTimeFormatter.ofPattern("MMMM d, yyyy"));
-        String time = LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss a"));
-
-        Transaction newTransaction = new Transaction(date, time, description, vendor, amount);
+        Transaction newTransaction = new Transaction(transactionDate.format(dtFormatter), time, description, vendor, amount);
         ledger.addTransaction(newTransaction);
 
         System.out.println();

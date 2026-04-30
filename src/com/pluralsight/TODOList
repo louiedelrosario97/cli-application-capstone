@@ -1,6 +1,6 @@
 // ---------------------------------- Detail Tweaks --------------------------------------
 // TODO: Add code block(s) for when user inputs wrong variable type
-// TODO: Change code so user has to enter date manually
+// DONE: Change code so user has to enter date manually, changed to default date format for simplicity
 // DONE: Fix code to add "$" to amount
 // TODO: Add feature in deposit/payment that verifies the data before submitting it into .csv
 // TODO: Add code within deposit() and payment() to prompt "Make Another -----?"
