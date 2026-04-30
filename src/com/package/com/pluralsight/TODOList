@@ -1,10 +1,10 @@
 // ---------------------------------- Detail Tweaks --------------------------------------
 // TODO: Add code block(s) for when user inputs wrong variable type
-// TODO: Fix code to allow "$" when entering "amount"
+// DONE: Fix code to add "$" to amount
 // TODO: Add feature in deposit/payment that verifies the data before submitting it into .csv
 // TODO: Add code within deposit() and payment() to prompt "Make Another -----?"
-// TODO: Format categories so the columns align properly regardless of length
-// TODO: Format time (remove nanoseconds, format to AM/PM time
+// DONE: Format categories so the columns align properly
+// DONE: Format time (remove nanoseconds, format to AM/PM time
 // TODO: Add if there is no data available to display in each method
 // DONE: Fix code, time is printing as date
 
@@ -23,6 +23,8 @@
 // DONE: yearToDate() — filters by current year
 // DONE: previousYear() — filters by current year - 1
 // DONE: searchByVendor() — filters by vendor name using .contains
+
+// TODO: .parse LocalDate in all of the filter methods to MMMM d, yyyy
 
 
 // ------------------------------------- Main ---------------------------------------------
