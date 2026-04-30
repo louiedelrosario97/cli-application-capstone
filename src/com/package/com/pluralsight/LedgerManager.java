@@ -78,19 +78,26 @@ public class LedgerManager
 // --------------------------------------------- displayDeposits() ----------------------------------------------------
     public void displayDeposits()
     {
+        System.out.println();
+        System.out.println("   Now Displaying All Deposits...");
         printHeader();
         for (Transaction t : transactions)
         {
-            System.out.println(t.getAmount() > 0);
+            if (t.getAmount() > 0) // All elements in 'transactions' that has a positive 'amount' value will display
+            {
+                System.out.println(t);
+            }
         }
     }
 // --------------------------------------------- displayPayments() ----------------------------------------------------
     public void displayPayments()
     {
+        System.out.println();
+        System.out.println("   Now Displaying All Payments...");
         printHeader();
         for (Transaction t : transactions)
         {
-            if (t.getAmount() < 0)
+            if (t.getAmount() < 0) // All elements in 'transactions' that has a negative 'amount' value will display
             {
                 System.out.println(t);
             }

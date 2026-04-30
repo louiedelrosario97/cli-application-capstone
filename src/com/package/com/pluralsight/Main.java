@@ -2,6 +2,7 @@ package com.pluralsight;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 
@@ -138,19 +139,20 @@ public class Main
 
         while (amount < 0)
         {
+            System.out.println();
             System.out.println("Must be a positive value, please try again.");
             System.out.print("Amount: " );
             amount = Double.parseDouble(scanner.nextLine());
         }
 
-        String date = LocalDate.now().toString();
-        String time = LocalTime.now().toString();
+        String date = LocalDate.now().format(DateTimeFormatter.ofPattern("MMMM d, yyyy"));
+        String time = LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss a")); // "hh:mm:ss a" creates 12-hour AM/PM format
 
         Transaction newTransaction = new Transaction(date, time, description, vendor, amount);
         ledger.addTransaction(newTransaction);
 
         System.out.println();
-        System.out.println("Deposit added successfully!");
+        System.out.println("Deposit added successfully! Returning to Homescreen...");
     }
     // ---------------------------------------- payment() -------------------------------------------------------------
     public static void payment()
@@ -169,18 +171,19 @@ public class Main
 
         while (amount > 0)
         {
+            System.out.println();
             System.out.println("Must be a negative value, please try again.");
             System.out.print("Amount: ");
             amount = Double.parseDouble(scanner.nextLine());
         }
 
-        String date = LocalDate.now().toString();
-        String time = LocalTime.now().toString();
+        String date = LocalDate.now().format(DateTimeFormatter.ofPattern("MMMM d, yyyy"));
+        String time = LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss a"));
 
         Transaction newTransaction = new Transaction(date, time, description, vendor, amount);
         ledger.addTransaction(newTransaction);
 
         System.out.println();
-        System.out.println("Payment added successfully!");
+        System.out.println("Payment added successfully! Returning to Homescreen...");
     }
 }
