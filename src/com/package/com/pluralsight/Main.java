@@ -11,10 +11,11 @@ public class Main
    static Scanner scanner = new Scanner(System.in);
    static LedgerManager ledger = new LedgerManager();
 
-    static void main(String[] args)
+   static void main(String[] args)
     {
         homeScreen();
     }
+
     // ---------------------------------------- homeScreen() ----------------------------------------------------------
    static void homeScreen()
    {   String choice;

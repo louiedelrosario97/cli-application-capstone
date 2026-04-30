@@ -15,9 +15,10 @@ public class LedgerManager
     {
         loadTransactions();
     }
+
 // ----------------------------------------- loadTransactions() --------------------------------------------------------
     private void loadTransactions()
-    {           // Plug in file/buff reader, if statement that includes "no data" possibility
+    {
         try
         {
             FileReader fReader = new FileReader("transaction_history.csv");
@@ -106,15 +107,14 @@ public class LedgerManager
     public void monthToDate()
     {
         printHeader();
-        LocalDate today = LocalDate.now();
+        LocalDate now = LocalDate.now();
 
         for (int i = transactions.size() - 1; i >= 0; i--)
         {
             Transaction t = transactions.get(i);
             LocalDate date = LocalDate.parse(t.getDate());
-
-            if (date.getYear() == today.getYear() &&
-                    date.getMonthValue() == today.getMonthValue())
+            // if statement filters for elements that have the same year and month as 'now'
+            if (date.getYear() == now.getYear() && date.getMonthValue() == now.getMonthValue())
             {
                 System.out.println(t);
             }
@@ -131,8 +131,7 @@ public class LedgerManager
             Transaction t = transactions.get(i);
             LocalDate date = LocalDate.parse(t.getDate());
 
-            if (date.getYear() == prevMonth.getYear() &&
-                    date.getMonthValue() == prevMonth.getMonthValue())
+            if (date.getYear() == prevMonth.getYear() && date.getMonthValue() == prevMonth.getMonthValue())
             {
                 System.out.println(t);
             }

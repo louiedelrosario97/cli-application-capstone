@@ -4,7 +4,7 @@
 // TODO: Add feature in deposit/payment that verifies the data before submitting it into .csv
 // TODO: Add code within deposit() and payment() to prompt "Make Another -----?"
 // DONE: Format categories so the columns align properly
-// DONE: Format time (remove nanoseconds, format to AM/PM time
+// DONE: Format time (remove nanoseconds, format to AM/PM time)
 // TODO: Add if there is no data available to display in each method
 // DONE: Fix code, time is printing as date
 
