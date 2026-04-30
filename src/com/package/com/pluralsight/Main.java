@@ -33,11 +33,13 @@ public class Main
 
            switch (choice)
            {
-               case "D": deposit();   break;
-               case "P": payment();  break;
-               case "L": ledgerScreen(); break;
+               case "D": deposit();           break;
+               case "P": payment();           break;
+               case "L": ledgerScreen();      break;
                case "X": runningLoop = false; break;
-               default:  System.out.println("Invalid option, silly billy.");
+               default:
+                   System.out.println();
+                   System.out.println("Invalid option. Please try again.");
            }
        }
        System.out.println("Sayonara!");
@@ -49,6 +51,7 @@ public class Main
         boolean runningLoop = true;
         while (runningLoop)
         {
+            System.out.println();
             System.out.println("---- LEDGER ----");
             System.out.println("A) Display All");
             System.out.println("D) Display Deposit History");
@@ -58,7 +61,6 @@ public class Main
             System.out.println("X) Close App");
             System.out.println("Choose option: ");
             choice = scanner.nextLine().toUpperCase().strip();
-            System.out.println();
 
             switch (choice)
             {
@@ -69,9 +71,12 @@ public class Main
                 case "H": homeScreen();             break;
                 case "X": runningLoop = false;      break;
 
-                default: System.out.println("Invalid option. Please try again.");
+                default:
+                    System.out.println();
+                    System.out.println("Invalid option. Please try again.");
             }
         }
+        System.out.println();
         System.out.println("Sayonara!");
     }
     // --------------------------------------------- reportsScreen() --------------------------------------------------
@@ -100,7 +105,7 @@ public class Main
                 case "3": ledger.yearToDate();    break;
                 case "4": ledger.previousYear();  break;
                 case "5":
-                    System.out.print("Enter vendor name: ");
+                    System.out.print("Vendor Name: ");
                     String vendorName = scanner.nextLine();
                     ledger.searchByVendor(vendorName);
                                                   break;
@@ -108,14 +113,18 @@ public class Main
                 case "H": homeScreen();           break;
                 case "X": runningLoop = false;    break;
 
-                default: System.out.println("Invalid option. Please try again.");
+                default:
+                    System.out.println();
+                    System.out.println("Invalid option. Please try again.");
             }
         }
+        System.out.println();
         System.out.println("Sayonara!");
     }
     // ---------------------------------------- deposit() -------------------------------------------------------------
     public static void deposit()
     {
+        System.out.println();
         System.out.println("DEPOSIT INFO:");
         System.out.println("-------------------");
         System.out.print("Description: ");
@@ -139,12 +148,16 @@ public class Main
 
         Transaction newTransaction = new Transaction(date, time, description, vendor, amount);
         ledger.addTransaction(newTransaction);
+
         System.out.println();
         System.out.println("Deposit added successfully!");
     }
     // ---------------------------------------- payment() -------------------------------------------------------------
     public static void payment()
     {
+        System.out.println();
+        System.out.println("PAYMENT INFO:");
+        System.out.println("-------------------");
         System.out.print("Description: ");
         String description = scanner.nextLine();
 
@@ -162,11 +175,12 @@ public class Main
         }
 
         String date = LocalDate.now().toString();
-        String time = LocalDate.now().toString();
+        String time = LocalTime.now().toString();
 
         Transaction newTransaction = new Transaction(date, time, description, vendor, amount);
         ledger.addTransaction(newTransaction);
 
+        System.out.println();
         System.out.println("Payment added successfully!");
     }
 }

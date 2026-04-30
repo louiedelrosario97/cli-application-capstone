@@ -60,12 +60,15 @@ public class LedgerManager
 // ----------------------------------------- printHeader() ---------------------------------------------------------
     private void printHeader()
     {
+        System.out.println();
         System.out.println(" Date | Time | Description | Vendor | Amount ");
         System.out.println("-------------------------------------------");
     }
 // --------------------------------------------- displayAll() ---------------------------------------------------------
     public void displayAll()
     {
+        System.out.println();
+        System.out.println("   Now Displaying All Transactions...");
         printHeader();
         for (int i = transactions.size() - 1; i >= 0; i--)
         {
