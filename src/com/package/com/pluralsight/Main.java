@@ -14,7 +14,7 @@ public class Main
     {
         homeScreen();
     }
-    // ---------------------------------------- homeScreen() -----------------------------------------------------------
+    // ---------------------------------------- homeScreen() ----------------------------------------------------------
    static void homeScreen()
    {   String choice;
        boolean runningLoop = true; // Variable used to control the loop via "Close App"

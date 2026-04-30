@@ -10,7 +10,7 @@ public class Transaction {
     double amount;
 
     // Getters
-    public double getAmount() {return amount;}
+    public double getAmount() { return amount; }
     public String getVendor() { return vendor; }
     public String getDescription() { return description; }
     public String getTime() { return time; }
