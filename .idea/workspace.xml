@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="201931ae-8d83-45bb-a712-f18a8fac4cb3" name="Changes" comment="Fixed the package structure so the app runs properly" />
+    <list default="true" id="201931ae-8d83-45bb-a712-f18a8fac4cb3" name="Changes" comment="Fixed the package structure so the app runs properly">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +85,7 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix package structure to src/com/pluralsight" />
     <MESSAGE value="Fixed the package structure so the app runs properly" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixed the package structure so the app runs properly" />
   </component>
