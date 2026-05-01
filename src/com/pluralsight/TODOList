@@ -1,6 +1,10 @@
-// ---------------------------------- Detail Tweaks --------------------------------------
-// TODO: [ IN PROGRESS ] Add try-catch in deposit() & payment() for 'amount' user input.
+// -------------------------------- [ IMPORTANT TASKS ] ----------------------------------
+// DONE: Add try-catch in deposit() & payment() for 'amount' user input.
 // TODO: Add try-catch in deposit() & payment() for 'date' user input.
+// TODO: .parse LocalDate in all of the filter methods to MMMM d, yyyy
+// DONE: Fix code, time is printing as date
+
+// ---------------------------------- Detail Tweaks --------------------------------------
 // DONE: Change code so user has to enter date manually, changed to default date format for simplicity
 // DONE: Fix code to add "$" to amount
 // TODO: Add feature in deposit/payment that verifies the data before submitting it into .csv
@@ -8,7 +12,6 @@
 // DONE: Format categories so the columns align properly
 // DONE: Format time (remove nanoseconds, format to AM/PM time)
 // TODO: Add if there is no data available to display in each method
-// DONE: Fix code, time is printing as date
 
 // ---------------------------------- LedgerManager --------------------------------------
 // DONE: Create LedgerManagement class
@@ -26,9 +29,6 @@
 // DONE: previousYear() — filters by current year - 1
 // DONE: searchByVendor() — filters by vendor name using .contains
 
-// TODO: .parse LocalDate in all of the filter methods to MMMM d, yyyy
-
-
 // ------------------------------------- Main ---------------------------------------------
 // DONE: Setup main()
 // DONE: main() calls homeScreen()
@@ -38,8 +38,6 @@
 // DONE: payment() — same as deposit() but amount stored as negative
 // DONE: ledgerScreen() — while loop with switch, calls display methods and reportsScreen()
 // DONE: reportsScreen() — while loop with switch, calls matching filter methods
-
-
 
 // ---------------------------------- Transaction -----------------------------------------
 // DONE: Created Transaction class
