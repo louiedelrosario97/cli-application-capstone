@@ -4,8 +4,9 @@
 // DONE: Plug in DateTimeFormatter in all the report-filter methods to MMMM d, yyyy
 // DONE: Fix code, time is printing as date
 // DONE: Change to Boba Shop theme!
-// TODO: Create README file
-
+// DONE: Create README file
+// TODO: Add comments for needed context
+// TODO: Add diagram and interesting code to README
 // ---------------------------------- Detail Tweaks --------------------------------------
 // DONE: Change code so user has to enter date manually, changed to default date format for simplicity
 // DONE: Fix code to add "$" to amount
