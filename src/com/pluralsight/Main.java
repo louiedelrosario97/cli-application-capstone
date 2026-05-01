@@ -142,15 +142,27 @@ public class Main
         System.out.print("Vendor: ");
         String vendor = scanner.nextLine();
 
-        System.out.print("Deposit Amount: $");
-        double amount = Double.parseDouble(scanner.nextLine());
-
-        while (amount < 0)
+        double amount = 0;
+        boolean amountInput = false;
+        while (!amountInput)
         {
-            System.out.println();
-            System.out.println("Deposit must be a positive value, please try again.");
-            System.out.print("Amount: $" );
-            amount = Double.parseDouble(scanner.nextLine());
+            System.out.print("Deposit Amount: $");
+            try
+            {
+                amount = Double.parseDouble(scanner.nextLine());
+                if (amount < 0)
+                {
+                    System.out.println();
+                    System.out.println("Deposit must be a positive value, please try again.");
+                }
+                else { amountInput = true; }
+            }
+
+            catch (NumberFormatException e)
+            {
+                System.out.println();
+                System.out.println("Invalid amount. Please enter only number values.");
+            }
         }
 
         Transaction newTransaction = new Transaction(transactionDate.format(dtFormatter), time, description, vendor, amount);
