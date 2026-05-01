@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d50e6fb-fced-4c69-a90c-2cb6935a2383" name="Changes" comment="// DONE: Change code so user has to enter date manually, changed to default date format for simplicity">
+    <list default="true" id="1d50e6fb-fced-4c69-a90c-2cb6935a2383" name="Changes" comment="// DONE: Add try-catch in deposit() &amp; payment() for 'amount' user input.&#10;&#10;try-catch for 'amount' user input completed. App won't crash if user causes an exception">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pluralsight/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pluralsight/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pluralsight/TODOList" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pluralsight/TODOList" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,7 @@
       <updated>1777337076538</updated>
       <workItem from="1777337080686" duration="12718000" />
       <workItem from="1777363409334" duration="73214000" />
-      <workItem from="1777589356726" duration="4484000" />
+      <workItem from="1777589356726" duration="6188000" />
     </task>
     <task id="LOCAL-00001" summary="loadTransactions() method built 90%">
       <option name="closed" value="true" />
@@ -246,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777592127937</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="// TODO: [ IN PROGRESS ] Add try-catch in deposit() &amp; payment() for 'amount' user input.&#10;&#10;Created try-catch for deposit(), now need to recreate the same for payment()">
+      <option name="closed" value="true" />
+      <created>1777593925008</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1777593925008</updated>
+    </task>
+    <task id="LOCAL-00019" summary="// DONE: Add try-catch in deposit() &amp; payment() for 'amount' user input.&#10;&#10;try-catch for 'amount' user input completed. App won't crash if user causes an exception">
+      <option name="closed" value="true" />
+      <created>1777594372442</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1777594372442</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +294,9 @@
     <MESSAGE value="updated todo list" />
     <MESSAGE value="minor code cleaning" />
     <MESSAGE value="// DONE: Change code so user has to enter date manually, changed to default date format for simplicity" />
-    <option name="LAST_COMMIT_MESSAGE" value="// DONE: Change code so user has to enter date manually, changed to default date format for simplicity" />
+    <MESSAGE value="// TODO: [ IN PROGRESS ] Add try-catch in deposit() &amp; payment() for 'amount' user input.&#10;&#10;Created try-catch for deposit(), now need to recreate the same for payment()" />
+    <MESSAGE value="// DONE: Add try-catch in deposit() &amp; payment() for 'amount' user input.&#10;&#10;try-catch for 'amount' user input completed. App won't crash if user causes an exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="// DONE: Add try-catch in deposit() &amp; payment() for 'amount' user input.&#10;&#10;try-catch for 'amount' user input completed. App won't crash if user causes an exception" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

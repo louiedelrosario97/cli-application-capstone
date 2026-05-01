@@ -1,6 +1,6 @@
 // -------------------------------- [ IMPORTANT TASKS ] ----------------------------------
 // DONE: Add try-catch in deposit() & payment() for 'amount' user input.
-// TODO: Add try-catch in deposit() & payment() for 'date' user input.
+// TODO: [ IN PROGRESS ] Add try-catch in deposit() & payment() for 'date' user input.
 // TODO: .parse LocalDate in all of the filter methods to MMMM d, yyyy
 // DONE: Fix code, time is printing as date
 

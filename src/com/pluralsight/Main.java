@@ -129,10 +129,23 @@ public class Main
         System.out.println("DEPOSIT INFO:");
         System.out.println("-------------------");
 
-        System.out.print("Date (MM/DD/YYYY): ");
-        String date = scanner.nextLine();
-        DateTimeFormatter dtFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        LocalDate transactionDate = LocalDate.parse(date, dtFormatter);
+        String date;
+        while (true)
+        {
+            System.out.print("Date (MM/DD/YYYY): ");
+            try
+            {
+                String date = scanner.nextLine();
+                DateTimeFormatter dtFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+                LocalDate transactionDate = LocalDate.parse(date, dtFormatter);
+            }
+
+            catch (Exception e)
+            {
+                System.out.println();
+                System.out.println("Invalid date format. Please enter date in (MM/DD/YYYY) format.");
+            }
+        }
 
         String time = LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss a")); // "hh:mm:ss a" creates 12-hour AM/PM format
 
