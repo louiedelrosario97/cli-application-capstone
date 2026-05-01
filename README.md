@@ -11,3 +11,9 @@ From there, you can choose between recording a sale, recording an
 expense, or opening the ledger screen. 
 
 In the ledger screen, you can choose from various transaction types to display, or you can open the "reports screen"
+
+
+## User Path (Created in Excalidraw.com)
+![Screenshot 2026-05-01 074927.png](Screenshot%202026-05-01%20074927.png)
+
+

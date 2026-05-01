@@ -5,8 +5,8 @@
 // DONE: Fix code, time is printing as date
 // DONE: Change to Boba Shop theme!
 // DONE: Create README file
-// TODO: Add comments for needed context
-// TODO: Add diagram and interesting code to README
+// DONE: Add comments for needed context
+// DONE: Add diagram to README
 // ---------------------------------- Detail Tweaks --------------------------------------
 // DONE: Change code so user has to enter date manually, changed to default date format for simplicity
 // DONE: Fix code to add "$" to amount
@@ -14,7 +14,7 @@
 // TODO: Add code within deposit() and payment() to prompt "Make Another -----?"
 // DONE: Format categories so the columns align properly
 // DONE: Format time (remove nanoseconds, format to AM/PM time)
-// TODO: Add if there is no data available to display in each method
+// TODO: Add code if there is no data available to display in each method
 // TODO: Fix case for 'Close App' in ledgerScreen() and reportsScreen(), does not close
 
 // ---------------------------------- LedgerManager --------------------------------------
