@@ -193,10 +193,25 @@ public class Main
         System.out.println("PAYMENT INFO:");
         System.out.println("-------------------");
 
-        System.out.print("Date (MM/DD/YYYY): ");
-        String date = scanner.nextLine();
         DateTimeFormatter dtFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        LocalDate transactionDate = LocalDate.parse(date, dtFormatter);
+        LocalDate paymentDate = null;
+        boolean dateInput = false;
+        while (!dateInput) // LOGIC: By default the user input is false. If user enters a valid value for the DateTimeFormatter, then dateInput = true, ending the loop.
+        {
+            System.out.print("Date (MM/DD/YYYY): ");
+            try
+            {
+                String date = scanner.nextLine();
+                paymentDate = LocalDate.parse(date, dtFormatter);
+                dateInput = true;
+            }
+
+            catch (Exception e)
+            {
+                System.out.println();
+                System.out.println("Invalid date format. Please enter date in (MM/DD/YYYY) format.");
+            }
+        }
 
         String time = LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss a"));
 
@@ -229,7 +244,7 @@ public class Main
             }
         }
 
-        Transaction newTransaction = new Transaction(transactionDate.format(dtFormatter), time, description, vendor, amount);
+        Transaction newTransaction = new Transaction(paymentDate.format(dtFormatter), time, description, vendor, amount);
         ledger.addTransaction(newTransaction);
 
         System.out.println();
